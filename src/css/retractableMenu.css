@@ -1,0 +1,74 @@
+#iconMenu{
+    margin: 0%;
+    cursor: pointer;
+    padding: .75%;
+    position: absolute;
+    z-index: 1;
+}
+
+#menuRet{
+    width: 250px;
+    height: 75%;
+    background-color: rgb(87, 87, 87);
+    position: absolute;
+    transition: all .2s linear;
+    left: -270px;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+#elo{
+    background-color: dimgray;
+    padding: 5%;
+    font-family: Arial Black;
+    transition: all .2s linear;
+    color: whitesmoke;
+    border-bottom: 2px rgb(75, 72, 72) solid;
+    margin: 0%;
+
+
+}
+
+#elo:hover{
+    background-color: darkgray;
+}
+
+#checka{
+    cursor: pointer;
+    display: none;
+}
+
+#checka:checked ~ #menuRet{
+    transform: translateX(+270px);
+}
+
+#elo.atual{
+    background-color: rgb(85, 64, 64);
+}
+
+
+/* HTML
+
+<input type="checkbox" name="cheech" id="checka">
+<label for="checka" id="iconMenu" ><img src="src/img/three bars.png" alt="" width="50px" height="50px"> </label>
+    
+
+<div id="menuRet">
+    <nav>
+
+        <a href="#"> <div id="elo"> Principal </div></a>
+        <a href="#"> <div id="elo"> Secundário </div></a>
+        <a href="#"> <div id="elo"> Por aí vai</div></a>
+        <a href="#"> <div id="elo"> Vc já entendeu </div></a>
+
+    </nav>
+</div>
+*/

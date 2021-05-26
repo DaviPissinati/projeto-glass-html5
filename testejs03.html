@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>teste javaScript</title>
+    <meta charset="utf-8">
+    
+    
+    <link rel="stylesheet" href="_css/estilo.css">
+    <script>
+        var quebrada = false;
+
+        function mudaLampada(tipo) {
+            if (!quebrada) {
+                document.getElementById("Luz").src = "_imagens/" +
+                    tipo + ".jpg ";
+                if (tipo == 'lampada-quebrada') {
+                    quebrada = true;
+                }
+            }
+        }
+    </script>
+    <script>
+        function mudafoto(foto) {
+            document.getElementById("icone").scr = foto;
+        }
+    </script>
+
+    <script>
+        function mudaFoto(foto) {
+            document.getElementById("icone").src = "_imagens/" + foto + ".png";
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img src="_imagens/lampada-apagada.jpg" id="Luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')" />
+
+    <img id="icone" src="_imagens/glass-oculos-preto-peq.png" />
+    <nav id="menu">
+        <li onmouseover="mudafoto('Home')" onmouseout="mudafoto('icone')"><a href="index.html"> Home</a></li>
+        <li onmouseover="mudafoto('especificacoes')" onmouseout="mudafoto('glass-oculos-preto-peq')"><a href="specs.html">Especificações</a></li>
+        <li onmouseover="mudafoto('fotos')" onmouseout="mudafoto('glass-oculos-preto-peq')"><a href="fotos.html">Fotos</a></li>
+        <li onmouseover="mudafoto('multimidia')" onmouseout="mudafoto('glass-oculos-preto-peq')"><a href="multimidia.html">Multimídia </a></li>
+        <li onmouseover="mudafoto('contato')" onmouseout="mudafoto('/glass-oculos-preto-peq')"><a href="fale-conosco.html">Fale conosco</a></li>
+    </nav>
+    <nav>
+
+    </nav>
+
+
+</body>
+
+
+
+
+
+
+</html>

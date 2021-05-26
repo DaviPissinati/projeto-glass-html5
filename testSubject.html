@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shourtcut icon" href="src/img/minilogo/minilogo.png">
+
+        <link rel="stylesheet" href="src/css/style.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="src/css/retractableMenu.css" type="text/css" media="screen">
+        
+    </head>
+    <body>
+
+
+        <input type="checkbox" name="cheech" id="checka">
+        <label for="checka" id="iconMenu" ><img src="src/img/three bars.png" alt="" width="50px" height="50px"> </label>
+            
+
+        <div id="menuRet">
+            <nav>
+
+                <a href="testSubject.html"> <div id="elo" class="atual"> Principal </div> </a>
+                <a href="Ex01.html"> <div id="elo"> Segundo Site </div></a>
+                <a href="Ex02.html"> <div id="elo"> Terceiro Site</div></a>
+                <a href="Ex03.html"> <div id="elo"> Quarto Site </div></a>
+
+            </nav>
+        </div>
+
+        <div id = "pai">
+
+            <header>
+            <h1> Título Exemplo </h1>
+            <h2> Capítulo 1 </h2>
+            </header>            
+
+            <p>
+                No menu Inserir, as galerias incluem itens que são projetados para corresponder à aparência geral do documento. Você pode usar essas galerias para inserir tabelas, cabeçalhos, rodapés, listas, folhas de rosto e outros blocos de construção do documento. Quando você cria imagens, gráficos ou diagramas, esses elementos também são coordenados com a aparência atual do documento. Você pode alterar facilmente a formatação do texto selecionado no documento escolhendo uma aparência para o texto selecionado na galeria Estilos Rápidos, na guia Início. Você também pode formatar texto diretamente usando os outros controles na guia Início.
+            </p>
+
+            <h2 id="ch2" onmouseover="entrar()" onmouseleave="sair()">Capítulo 2</h2>
+            
+            <p>
+                A maioria dos controles oferece uma opção entre usar a aparência do tema atual ou usar um formato que você pode especificar. Para alterar a aparência geral do documento, escolha novos elementos Tema na guia Layout da Página. Para alterar as aparências disponíveis na galeria Estilos Rápidos, use o comando Alterar Conjunto Atual de Estilos Rápidos. As galerias Temas e Estilos Rápidos fornecem comandos de redefinição para que você possa sempre restaurar a aparência do documento ao original contido no modelo atual. No menu Inserir, as galerias incluem itens que são projetados para corresponder à aparência geral do documento.
+            </p>
+            <div id="imgbox">
+                <img src="src/img/Face/Face3.png" alt="Heyy" id="iconyay" onmouseenter="iconsethover()" onclick="iconsetclick()" onmouseout="iconsetdefaut()">
+            </div>
+            <form name="cadastro" action="" method="post" required>
+                <span class ="order">Insert your name:<br></span>
+                <input type="text" name="name" id="txtName" required> <br><br>
+                <span class ="order2">Insert your last name:<br></span>
+                <input type="text" name="lastName" id="txtLastName"> <br><br>
+                Shall you give us your birth:<br>
+                <input type="date" name="birth" id="txtBirth"><br><br>
+                <input type="button" name="btconcaten8" value="Concatenar" onclick="concatena()">
+                <input type="reset" value="Cancelar">
+            </form>
+
+        </div>
+
+        <hr>
+        <div id="js"></div>
+
+        <script>
+            var icn = document.querySelector('img#iconyay');
+
+            function iconsethover() {
+                icn.src = "src/img/face/face1.png";
+            }
+
+            function iconsetclick(){
+                icn.src = "src/img/face/face2.png";
+            }
+
+            function iconsetdefaut(){
+                icn.src = "src/img/face/face3.png";
+            }
+
+        </script>
+        
+        <script src= "src/aulaG js/aula05.js"></script>
+    </body>
+</html>
